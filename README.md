@@ -17,3 +17,9 @@ These search results will be rendered on a google map as pins with more informat
 
 1. [Bootstrap](http://getbootstrap.com/) / [Materialize](http://materializecss.com/) / SemanticUI(http://semantic-ui.com/)
 2. [Google Maps API](https://developers.google.com/maps/documentation/javascript/examples/map-simple)
+
+## Images
+
+[!!image1](https://github.com/StaceyEC/finalproject/blob/master/staceyproject1.jpg?raw=true)
+[!!image2](https://github.com/StaceyEC/finalproject/blob/master/staceyproject2.jpg?raw=true)
+
