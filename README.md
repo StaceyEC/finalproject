@@ -20,6 +20,5 @@ These search results will be rendered on a google map as pins with more informat
 
 ## Images
 
-![image1](https://github.com/StaceyEC/finalproject/blob/master/staceyproject1.jpg?raw=true)
-![image2](https://github.com/StaceyEC/finalproject/blob/master/staceyproject2.jpg?raw=true)
-
+<img src="https://github.com/StaceyEC/finalproject/blob/master/staceyproject1.jpg?raw=true" style="transform: rotate(90deg);"/>
+<img src="https://github.com/StaceyEC/finalproject/blob/master/staceyproject1.2pg?raw=true" style="transform: rotate(90deg);"/>
