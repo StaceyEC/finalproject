@@ -1,0 +1,119 @@
+/*
+accent color: #c5b881;
+Primary Text: #000002; 
+secondary Text: #5a5b62;
+
+Other text: #757575;
+
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto Slab', serif;
+
+*/
+
+body {
+	background-color: #e8d568;
+ 	font-family: 'Roboto', sans-serif;
+	line-height: 150%;
+	margin: 0px;
+}
+
+.header {
+	background-color: #212121;
+	min-height: 50px;
+	width: 100%;
+	margin: 0;
+}
+
+.navi {
+	font-size: 28px;
+	font-family: 'Roboto Slab', serif;
+	color: #ebecf0;
+	font-weight: bold;
+	margin: 20px;
+	/* The links should be centered and I can't figure it out yet. */
+	text-decoration: none;
+}
+
+.header-right {
+float: right;
+}
+
+.header-left {
+	float: left;
+}
+
+.hero {
+	min-height: 250px;
+	width: 100%;
+	border: solid 1px #c5b881;
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+
+.logo {
+	margin: 20px;
+    float: left;
+    margin-right: 5px;
+}
+
+
+.main {
+min-height: 150px;
+}
+
+.main h1 {
+	font-size: 28px;
+	font-style: italic;
+	margin: 5px;
+	padding: 8px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+#locator {
+    height: 30px;
+    width: 700px;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.charity-search-button {
+    min-height: 25px;
+    border-radius: 15px;
+    font-size: 15px;
+    border: 0;
+    display: block;
+    margin: 10px auto;
+
+ form {
+ 	text-align: center;
+ }
+
+footer {
+	background: #212121;
+	min-height: 15px;
+	color: #000002;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+Just apply a class="clearfix" to the parent element. 
