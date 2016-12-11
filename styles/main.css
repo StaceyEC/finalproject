@@ -90,9 +90,9 @@ min-height: 150px;
 }
 
 .charity-search-button {
-    min-height: 25px;
+    min-height: 50px;
     border-radius: 15px;
-    font-size: 15px;
+    font-size: 20px;
     border: 0;
     display: block;
     margin: 10px auto;
@@ -110,6 +110,21 @@ footer {
 	left: 0;
 	bottom: 0;
 }
+
+.maps-space {
+	width: 75%;
+	min-height: 300px;
+	max-height: 700px 
+	border: dotted 2px #5a5b62;
+}
+
+/* This is for the error on the search box */
+.error-box {
+	border: 3px solid red;
+	font-weight: bold;
+}
+
+
 
 .clearfix { display: inline-block; }
 /* start commented backslash hack \*/
