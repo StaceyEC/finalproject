@@ -1,9 +1,8 @@
 
 
 .g-maps {
-	min-height: 250px;
-	max-height: 800px;
-	width: 90%;
+	height: auto;
+	width: 100%;
 	padding: 10px;
 	box-sizing: border-box;
 }
@@ -11,5 +10,18 @@
 
 
 .small {
-	max-height: 200px;
+	min-height: 200px;
 }
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.border-col {
+border: 1px solid ;
+}
+
