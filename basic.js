@@ -48,24 +48,24 @@ if ($('#map').length) {
 // attach form listeners.
 if ($('#location').length) {
 
-	$('#location').keypress(onKeyPressed);
+	$('#location').keypress(function(event){
+		if (event.which === 13) {
+			onKeyPressed();
+		}
+	});
 	$("#location-btn").click(onKeyPressed);
 
 	function onKeyPressed(event) {
-		console.log(event);
+		event.preventDefault();
 
-		if (event.which === 13) {
-			event.preventDefault();
+		let currentElement = $('#location');
 
-			let currentElement = $(this);
+		let userAddress = currentElement.val();
+		console.log('I got the address')
 
-			let userAddress = currentElement.val();
-			console.log('I got the address')
+		console.log(getURLExceptCurrentPage() + "index-results.html#" + encodeURI(userAddress) )
 
-			console.log(getURLExceptCurrentPage() + "index-results.html#" + encodeURI(userAddress) )
-
-			window.location.href = getURLExceptCurrentPage() + "index-results.html#" + userAddress;
-		}
+		window.location.href = getURLExceptCurrentPage() + "index-results.html#" + userAddress;
 	}
 
 }
@@ -75,6 +75,38 @@ function getURLExceptCurrentPage() {
 	let currentPage = pathFragments[pathFragments.length - 1];
 	return window.location.href.replace(currentPage, '');
 }
+
+
+// Dynamically change the header on index-results.html to include the userAddress variable //
+
+function setHeader() {}
+	
+	let addressH2Container = $("#address-header");
+
+	let userAddress = window.location.hash;
+
+	console.log(userAddress);
+
+	let newH2Text - `Here are some charities near ${userAddress} that you can volunteer at today!`
+
+	console.log(newH2Text);
+
+	$("#addres-header").innerHTML = "newH2Text";
+
+
+}
+
+
+
+
+function replaceH2(address){
+	let newH2Text - `There are places near ` ${userAddress} that you can volunteer today!`
+
+};
+
+
+
+
 
 /*
 		const container = $('.js-container');
