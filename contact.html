@@ -1,77 +1,78 @@
 <!DOCTYPE html>
-
 <html>
-
 	<head>
-
-	<title> Find Volunteer Work Easily </title>
-
+		<title> Find Volunteer Work Easily </title>
 		<meta name="description" content="Want to Find Ways to volunteer. Simply put your address in and search. Simple."/>
-
 		<link rel="stylesheet" href="materialize/css/materialize.css">
-
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="styles/main.css">
-
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
-
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
 	</head>
-
-	<body>
-			<div class="header clearfix">
-
-				<nav>
-				
-					<a href ="index.html"> <img src="images/volunteer-me.png" class="logo" alt="Volunteer me logo"> </a>
-
-					<a class="navi header-left" href="index.html"> Volunteer Me </a>
-					<!-- Need to figure out how to make the text next to it next to theimage-->
-
-					<a class= "navi header-right" href="about.html"> About </a>
-
-					<a class= "navi header-right" href="#"> Contact </a>		
-
-				</nav>
-
+	<body class="flow-text yellow lighten-4">
+		<nav class="grey darken-1">
+			<div class="nav-wrapper">
+				<a href="index.html" class="brand-logo">
+				<img src="images/volunteer-me.png" class="logo" alt="Volunteer me logo"> Volunteer Me
+				</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
 			</div>
-
+		</nav>
+		
 		<div class="main">
 			<h1>Let us know what you think </h1>
-
 			<p> Please fill out the form below to let us know how we're doing. Or If you have any suggestions for the site, you can let us know that too.
 			</p>
-
-			<form>
+			<!--	<form>
 				<fieldset>
-
+				
 					Name <input type="text"> </input>
 					email<input type="text"> </input>
 					City, State <input type="text"> </input>
 					Country <input type="text"> </input>
 					Comment <input type="text"> </input>
-					<!-- Captcha -->
-
-
+				
+				
 				</fieldset>
-			
-			</form>
-			
-
+				
+				</form>
+				-->
+			<div class="row form-center">
+				<form class="col s12">
+					<div class="row">
+						<div class="input-field col s6">
+							<input id="first_name" type="text" class="validate">
+							<label for="first_name">First Name</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="last_name" type="text" class="validate">
+							<label for="last_name">Last Name</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="last_name" type="text">
+							<label for="last_name">City, State, Zip</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="email" type="email" class="validate">
+							<label for="email" data-error="wrong" data-success="right">Email</label>
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
-			
-
-			<footer>
-				<p> General Assembly 2016 Front End Web Developement Course </p>
-			</footer> 
-
+		<footer>
+			<p> General Assembly 2016 Front End Web Developement Course </p>
+		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
 		<script src="materialize/js/materialize.js" type="text/javascript"></script>
-		
 		<script src="basic.js" type="text/javascript"></script>
 	</body>
-
 </html>
