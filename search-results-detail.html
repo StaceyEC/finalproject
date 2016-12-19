@@ -3,16 +3,14 @@
 	<head>
 		<title> Find Volunteer Work Easily </title>
 		<meta name="description" content="Want to Find Ways to volunteer. Simply put your address in and search. Simple."/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="materialize/css/materialize.css">
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/styles/main.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-		<link rel="stylesheet" href="assets/styles/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
-	
-	<body class="yellow lighten-4">
+	<body class="flow-text yellow lighten-4">
 
 		<nav class="grey darken-1">
 			<div class="nav-wrapper">
@@ -27,26 +25,37 @@
 		</nav>
 
 		<div class="row container">
-			<div class="main">
 
-				<!-- content set by js -->
-				<h2 id="resultsTitle"></h2>
+			<div class="main">
+				<div class="hero">
+				</div>
+				<h2> More information on <span style="color:#f57f17"> the charity</span> You Seleced
+				</h2>
 
 				<div class="row">
-
-					<div class="col s8">
-						<div class="map" id="map"></div>
+					<div class="col s6">
+						<div class="map"> 
+						</div>
 					</div>
 
-					<!-- content set by js -->
-					<div id="cards" class="col s4"></div>
+					<div class="col s6">
+						<h3> Name of the Charity </h3>
+						<p> Mission Statement of the charity</p>
+						<p> Description of the charity. Lots of Awesome stuff here. </p>
+						<i class="fa fa-phone"></i>
+						<p>555-555-5555</p>
+					</div>
 
-				</div><!-- row ends -->
-
-
+					<div class="col s12 clearfix">
+						<p>met, consectetur adipiscing elit. Phasellus facilisis, lorem tincidunt blandit aliquet, augue magna ornare quam, ac ultrices arcu leo et nunc. Nam nec suscipit magna, quis congue felis. Duis lorem neque, sodales condimentum mauris sit amet, condimentum eleifend ipsum. Proin et nisi vestibulum, bibendum purus id, posuere augue. Vestibulum viverra nisl vitae odio cursus, vitae placerat orci faucibus. Maecenas quis eros dui. Suspendisse ac odio sagittis, ornare erat id, bibendum purus. Cras vitae ante at ante aliquet ultricies. Sed fermentum scelerisqu.
+						</p>
+						<p>
+							<a href ="#"> Visit their website here! </a>
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
-
 
 		<footer class="page-footer  blue-grey darken-3">
 			<div class="container">
@@ -68,22 +77,15 @@
 			</div>
 			<div class="footer-copyright">
 				<div class="container">
-					General Assembly 2016 Front End Web Developement Course
+					General Assembly 2016 Front End Web Developement Course 
 					<a class="grey-text text-lighten-4 right" href="#!">by Stacey Clermont</a>
 				</div>
 			</div>
 		</footer>
-
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-		<script src="assets/scripts/charity-data.js" type="text/javascript"></script>
-		<script src="assets/scripts/search-results.js" type="text/javascript"></script>
-		<!--
-			Must load google maps after my search-results.js file,
-			since the "initMap" function must be defined (in the
-			global scope) before maps is loaded.
-		-->
-	  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLVQd58RCyzRD1JVKMvW4fMvwMCfd5ia8&callback=initMap"></script>
-
+		<script src="materialize/js/materialize.js" type="text/javascript"></script>
+		<script src="basic.js" type="text/javascript"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLVQd58RCyzRD1JVKMvW4fMvwMCfd5ia8&callback=initMap"
+			async defer></script>
 	</body>
 </html>
