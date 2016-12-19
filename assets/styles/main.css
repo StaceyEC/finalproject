@@ -1,0 +1,102 @@
+.g-maps {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.border-col {
+    border: 1px solid;
+}
+
+.form-center {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.map {
+    width: 100%;
+    height: 600px;
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*.map:before {
+  content: "Click on a location to view details.";
+}*/
+
+/*
+  Little override/fix for a Materialize bug,
+  which was causing the error message to be
+  wrapped on spaces ... which was weird.
+*/
+label {
+    white-space: pre;
+}
+
+/*
+  Override silly Materialize 70% default width,
+  wastes too much of the page.
+*/
+.container {
+  width: 90%;
+}
+
+.event-count,
+.search-location {
+  color: orange;
+}
+
+.caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+
+h1 {
+ font-size: 3.5rem;
+ text-align: center;
+ text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+ font-weight: bold;
+}
+
+.h2-about {
+ font-size: 2.5rem;
+ text-align: center;
+ text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+ font-weight: bold;
+}
+
+.nav-yellow {
+ background: #ffed00;
+}
+
+.nav-items {
+  font-size: 2.1rem;
+  color: black;
+  letter-spacing: 0px;
+}
+
+.footer-copyright {
+  background: #bdb32f;
+  min-height: 50px;
+  text-decoration: none;
+  padding: 20px;
+  text-align: right;
+}
+
+.no-line {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+
+}
