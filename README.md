@@ -20,5 +20,5 @@ These search results will be rendered on a google map as pins with more informat
 
 ## Images
 
-<img src="https://github.com/StaceyEC/finalproject/blob/master/extras/staceyproject1.jpg?raw=true" />
-<img src="https://github.com/StaceyEC/finalproject/blob/master/extras/staceyproject2.jpg?raw=true" />
+<img src="https://github.com/StaceyEC/finalproject/blob/master/assets/extras/staceyproject1.jpg?raw=true" />
+<img src="https://github.com/StaceyEC/finalproject/blob/master/assets/extras/staceyproject2.jpg?raw=true" />
