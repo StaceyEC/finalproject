@@ -3,7 +3,7 @@ body {
 }
 
 .emphasizer {
-
+  color: orange;
 }
 .g-maps {
     height: auto;
@@ -22,6 +22,11 @@ body {
 
 .border-col {
     border: 1px solid;
+}
+
+.btn, 
+.btn-large {
+  background: #15323a;
 }
 
 .form-center {
@@ -73,7 +78,7 @@ label {
 
 
 h1 {
- font-size: 3.5rem;
+ font-size: 3.1rem;
  text-align: center;
  text-shadow: 0 3px 0 rgba(255, 255, 255, 0.4);
  font-weight: bold;
@@ -113,10 +118,12 @@ h1 {
 
 .keep-in-div {
   width: 80%;
-  padding: 50px;
+  padding: 25px;
   font-size: 22px;
   font-weight: bold;
-  font-style: italic;
+  text-align: center;
+  height: 180px;
+  box-sizing: border-box;
 }
 
 .col-text {
@@ -127,3 +134,16 @@ h1 {
 .btn-center {
   text-align: center;
 }
+
+@media (max-width: 600px) {
+
+  .map {
+    height: 200px;
+  }
+
+  #resultsTitle {
+    font-size: 1.5rem;
+  }
+
+}
+

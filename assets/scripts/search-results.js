@@ -6,7 +6,7 @@ var map;
 window.initMap = function () {
   map = new google.maps.Map($('#map')[0], {
     center: { lat: 40.7127837, lng: -74.00594130000002 },
-    zoom: 12
+    zoom: 14
   });
 }
 
@@ -82,7 +82,7 @@ $(document).ready(function () {
       const address = volunteerEvent.company.address;
       const eventSearchString = `${address.street1} ${address.zipCode}`;
 
-      geocoder.geocode({'address': eventSearchString }, function(results, status) {
+      geocoder.geocode({ 'address': eventSearchString }, function(results, status) {
         if (status === 'OK' && searchBounds.contains(results[0].geometry.location)) {
 
           // The "++" operator increments a numerical
@@ -182,6 +182,6 @@ $(document).ready(function () {
 
 
   // ---
-  // code ENDS here
+  // my code ENDS here
 
 }); // End of jQuery "ready" wrapper
