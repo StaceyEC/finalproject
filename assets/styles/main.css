@@ -18,8 +18,11 @@
 }
 
 .form-center {
-    width: 90%;
+    width: 75%;
     margin: 0 auto;
+    padding: 25px;
+    box-sizing: border-box;
+
 }
 
 .map {
@@ -98,5 +101,18 @@ h1 {
   text-decoration: none;
   color: black;
   font-weight: bolder;
-
 }
+
+.keep-in-div {
+  width: 80%;
+  padding: 50px;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.col-text {
+  text-align: center;
+  max-height: 400px;
+}
+

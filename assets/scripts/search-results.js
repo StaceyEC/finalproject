@@ -112,7 +112,7 @@ $(document).ready(function () {
   function renderTitle(eventsLength, searchString) {
     const newTitle = `There are <span class="event-count">${eventsLength}</span>
                       places near <span class="search-location">${searchString}</span>
-                      where you can volunteer today!`;
+                      where you can volunteer today`;
     $("#resultsTitle").html(newTitle);
   }
 
