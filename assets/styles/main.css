@@ -1,3 +1,10 @@
+body {
+  background: #fafafa;
+}
+
+.emphasizer {
+
+}
 .g-maps {
     height: auto;
     width: 100%;
@@ -18,8 +25,11 @@
 }
 
 .form-center {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
+    padding: 25px;
+    box-sizing: border-box;
+
 }
 
 .map {
@@ -62,8 +72,58 @@ label {
 }
 
 
+h1 {
+ font-size: 3.5rem;
+ text-align: center;
+ text-shadow: 0 3px 0 rgba(255, 255, 255, 0.4);
+ font-weight: bold;
+}
 
+.h2-about {
+ font-size: 2.5rem;
+ text-align: center;
+ text-shadow: 0 2px 0 rgba(255, 255, 255, 0.4);
+ font-weight: bold;
+}
 
+.nav-yellow {
+ background: #ffed00;
+}
 
+.nav-items {
+  font-size: 1.4rem;
+  color: black;
+  letter-spacing: 0;
+  font-weight: bold;
+}
 
+.footer-copyright {
+  background: #bdb32f;
+  min-height: 30px;
+  text-decoration: none;
+  padding: 20px;
+  text-align: right;
+}
 
+.no-line {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+.keep-in-div {
+  width: 80%;
+  padding: 50px;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.col-text {
+  text-align: center;
+  max-height: 400px;
+}
+
+.btn-center {
+  text-align: center;
+}

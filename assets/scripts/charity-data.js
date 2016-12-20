@@ -178,7 +178,7 @@ var volunteerDatabase = {
          }
       },
       {
-         "eventName":"Help Set-up on Christmas Eve for Christmas Dinner",
+         "eventName":"French Instructor Needed",
          "company":{
             "name":"Goddard Riverside Community Center",
             "missionStatement":"Goddard Riverside Community Center, a not-for-profit organization, works to meet people’s basic needs - food, shelter, education - and to bring them together for mutual aid and social action, and to celebrate our richness as a society. ",
@@ -200,8 +200,8 @@ var volunteerDatabase = {
          "eventDetails":{
             "causeAreas":[
                "Community",
-               "Homeless & Housing",
-               "Hunger"
+               "Seniors",
+               ""
             ],
             "skills":[
                "Inventory Management",
@@ -228,7 +228,9 @@ var volunteerDatabase = {
             },
             "About":{
                "paragraphs":[
-                  ""
+                  "Goddard Riverside Community Center is seeking a qualified French Instructor to teach beginners French once a week to older adults in the Senior Center location.",
+                  "Send Resume and cover letter to BKilpatrick@goddard.org",
+                  "Goddard Riverside Community Center (GRCC) is a well established community-based agency with a range of programs on Manhattan's Upper West Side and Harlem."
                ]
             }
          }
