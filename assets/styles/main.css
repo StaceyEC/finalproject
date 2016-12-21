@@ -100,6 +100,7 @@ h1 {
   color: black;
   letter-spacing: 0;
   font-weight: bold;
+
 }
 
 .footer-copyright {
@@ -117,13 +118,26 @@ h1 {
 }
 
 .keep-in-div {
-  width: 80%;
+  max-width: 80%;
   padding: 25px;
   font-size: 22px;
   font-weight: bold;
   text-align: center;
   height: 180px;
   box-sizing: border-box;
+}
+
+.keep-in-div img {
+  width: 100%;
+}
+
+.a:hover,  { 
+  color: #4db6ac;
+}
+
+.a-inline {
+color: #15323a;
+font-weight: bold;
 }
 
 .col-text {
@@ -133,6 +147,10 @@ h1 {
 
 .btn-center {
   text-align: center;
+}
+
+.contact-padd {
+  padding-top: 3rem;
 }
 
 @media (max-width: 600px) {
