@@ -1,74 +1,76 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title> Find Volunteer Work Easily </title>
-		<meta name="description" content="Want to Find Ways to volunteer. Simply put your address in and search. Simple."/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<head>
+	<title> Find Volunteer Work Easily </title>
+	<meta name="description" content="Want to Find Ways to volunteer. Simply put your address in and search. Simple."/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-		<link rel="stylesheet" href="assets/styles/main.css">
-	</head>
-	
-	<body>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+	<link rel="stylesheet" href="assets/styles/main.css">
+</head>
 
-		<nav class="nav-yellow">
-			<div class="nav-wrapper">
-				<a href="index.html" class="brand-logo">
-				<img src="assets/images/volunteer-me-logo-small.png" class="logo" alt="Volunteer me logo">
-				</a>
-			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons icon-black">menu</i></a>
+<body>
 
-      		<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href="about.html" class="nav-items">About</a></li>
-				<li><a href="contact.html" class="nav-items">Contact</a></li>
-			</ul>	
-      		<ul class="side-nav" id="mobile-demo">
-				<li><a href="about.html" class="nav-items">About</a></li>
-				<li><a href="contact.html" class="nav-items">Contact</a></li>
-			</ul>
-			</div>
-		</nav>
+	<nav class="nav-yellow">
+		<div class="nav-wrapper container">
+			<a href="index.html" class="brand-logo">
+			<img src="assets/images/volunteer-me-logo-small.png" class="logo" alt="Volunteer me logo">
+			</a>
+		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons icon-black">menu</i></a>
 
-		<div class="row container">
-			<div class="main">
+  		<ul id="nav-mobile" class="right hide-on-med-and-down">
+			<li><a href="about.html" class="nav-items">About</a></li>
+			<li><a href="contact.html" class="nav-items">Contact</a></li>
+		</ul>	
+  		<ul class="side-nav" id="mobile-demo">
+			<li><a href="about.html" class="nav-items">About</a></li>
+			<li><a href="contact.html" class="nav-items">Contact</a></li>
+		</ul>
+		</div>
+	</nav>
+
+	<div class="row container">
+		<div class="main">
+
+			<!-- content set by js -->
+			<h2 id="resultsTitle"></h2>
+
+			<div class="row">
+
+				<div class="col l8 m6 s12">
+					<div class="map" id="map"></div>
+				</div>
 
 				<!-- content set by js -->
-				<h2 id="resultsTitle"></h2>
+				<div id="cards" class="col l4 m6 s12"></div>
 
-				<div class="row">
-
-					<div class="col l8 m6 s12">
-						<div class="map" id="map"></div>
-					</div>
-
-					<!-- content set by js -->
-					<div id="cards" class="col l4 m6 s12"></div>
-
-				</div><!-- row ends -->
+			</div><!-- row ends -->
 
 
-			</div>
 		</div>
+	</div>
 
 
-		<footer class="footer-copyright">
+	<footer class="footer-copyright">
+		<div class="footer-wrapper container">
 			<p> For General Assembly Final Project by <a href="http://staceyclermont.com" class="no-line"> Stacey Clermont </a>
 			</p>
-		</footer>
+		</div>
+	</footer>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-		<script src="assets/scripts/charity-data.js" type="text/javascript"></script>
-		<script src="assets/scripts/search-results.js" type="text/javascript"></script>
-		<!--
-			Must load google maps after my search-results.js file,
-			since the "initMap" function must be defined (in the
-			global scope) before maps is loaded.
-		-->
-	  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLVQd58RCyzRD1JVKMvW4fMvwMCfd5ia8&callback=initMap"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	<script src="assets/scripts/charity-data.js" type="text/javascript"></script>
+	<script src="assets/scripts/search-results.js" type="text/javascript"></script>
+	<!--
+		Must load google maps after my search-results.js file,
+		since the "initMap" function must be defined (in the
+		global scope) before maps is loaded.
+	-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLVQd58RCyzRD1JVKMvW4fMvwMCfd5ia8&callback=initMap"></script>
 
-	</body>
+</body>
 </html>
