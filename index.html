@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> Find Volunteer Work Easily </title>
+		
+		<title> Find Local Volunteer Opportunities | Volunteer Me</title>
 		<meta name="description" content="Want to Find Ways to volunteer. Simply put your address in and search. Simple."/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		
@@ -10,36 +11,49 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 		<link rel="stylesheet" href="assets/styles/main.css">
+
+		<meta property="og:title" content="The Local Charity Finder"/>
+		<meta property="og:site_name" content="Volunteer Me"/>
+		<meta property="og:description" content="Find local charity and volunteer opportunities. Looking to to make one of your off days more meaningful? Just search for a volunteer spot near you the day off and make a difference in your community, easily."/>
+
 	</head>
 	<body>
-		<nav class="nav-yellow">
+	
+	<nav class="nav-yellow">
 			<div class="nav-wrapper">
 				<a href="index.html" class="brand-logo">
 				<img src="assets/images/volunteer-me-logo-small.png" class="logo" alt="Volunteer me logo">
 				</a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="about.html" class="nav-items">About</a></li>
-					<li><a href="contact.html" class="nav-items">Contact</a></li>
-				</ul>
+			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+      		<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="about.html" class="nav-items">About</a></li>
+				<li><a href="contact.html" class="nav-items">Contact</a></li>
+			</ul>	
+      		<ul class="side-nav" id="mobile-demo">
+				<li><a href="about.html" class="nav-items">About</a></li>
+				<li><a href="contact.html" class="nav-items">Contact</a></li>
+			</ul>
 			</div>
 		</nav>
+		
 		<div class="slider">
 			<ul class="slides">
 				<li>
 					<img src="assets/images/beautify-neighborhood.jpg" alt="Habitat for humanity">
-					<div class="caption center-align">
+					<div class="caption right-align">
 						<h3>Community Cleanup & Beautification</h3>
 					</div>
 				</li>
 				<li>
 					<img src="assets/images/flint-water-plant-tower.jpg" alt="student and tutors">
-					<div class="caption left-align">
+					<div class="caption right-align">
 						<h3>Distribute Supplies to Needy Communities</h3>
 					</div>
 				</li>
 				<li>
 					<img src="assets/images/water-is-life-sioux.jpg" alt="student and tutors">
-					<div class="caption left-align">
+					<div class="caption right-align">
 						<h3>Support Environmental Causes</h3>
 					</div>
 				</li>
@@ -51,7 +65,7 @@
 				</li>
 				<li>
 					<img src="assets/images/homeless-begger.jpg" alt="donated toys">
-					<div class="caption center-align">
+					<div class="caption right-align">
 						<h3>Help the Homeless and Vulnerable</h3>
 					</div>
 				</li>
@@ -61,19 +75,25 @@
 			<div class="main">
 				<div class="hero">
 				</div>
-				<h1 class="h1-search">Where Do You Want to Volunteer?</h1>
+				<h1 class="h1-search">Where Do You Want to Volunteer Today?</h1>
 				<form>
 					<div class="row">
 						<div class="input-field col s12">
-							<input id="location" type="text" placeholder="Enter Address or Neighborhood, followed by city">
+							<input id="location" type="text" placeholder="Enter Address, Neighborhood, or City">
 							<label for="location">Search</label>
 						</div>
 					</div>
-					<a class="waves-effect waves-light btn" id="location-btn"><i class="material-icons right">search</i>Get Searching</a>
+					<div class="btn-center">
+					    <a class="waves-effect waves-light btn" id="location-btn"><i class="material-icons right">search</i>Find Charities</a>
+					</div>
 				</form>
 				<div class="row">
 					<div class="col s12">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ligula erat, pretium vitae porta at, tempor dictum tellus. Curabitur ut sagittis arcu. Etiam eget massa vestibulum, faucibus elit id, pellentesque arcu. Aliquam vel vehicula dolor. Aenean porttitor molestie lacus sed varius. Nunc quis dapibus sapien, et faucibus nisi. Curabitur non tristique nibh, non scelerisque mauris. Praesent mattis pretium sollicitudin. Cras tempor risus vel nunc pharetra, non eleifend nisl tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus.Pellentesque leo ligula, ullamcorper quis libero ut, laoreet euismod lorem. Duis fermentum eu eros eget consequat. Vivamus quis nulla id sem congue suscipit a at nunc. Mauris commodo, est et bibendum maximus, risus tortor consequat nunc, et porttitor lacus elit ac turpis. Aenean dictum ligula non augue convallis condimentum. Donec viverra pellentesque nibh, nec vestibulum tortor iaculis vel. Praesent egestas blandit velit non blandit. Nunc ut pharetra velit, in laoreet purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla congue lacus placerat, suscipit ex eget, laoreet ante. Vivamus vitae mi leo. In consequat ante vel leo fringilla, in hendrerit ex maximus.</p>
+						<p>I believe everyone should have the chance to make a difference. That's why I wanted to make it easy for regular people and nearby charities to quickly and easily connect. Volunteer Me is a pet project of mine after I realized that I kept putting aside my desire to give back in order for me to manage an aggressively busy life. I see the need for people to do good, I want to do good but the level of effort to give was too high, especially for young professionals who dedicate most of their waking lives to improving their careers. 
+						</p>
+						<p>
+						 As stupid as it sounds, donating to charities or volunteering for organizations shouldn't be hard. The work the organizations may ask can be hard, but finding nearby reputable causes that we want to give energy to shouldn't be, so I wanted to create a product that allows someone with an extra free day or afternoon to find an easy way to give back. 
+						</p>
 					</div>
 				</div>
 			</div>

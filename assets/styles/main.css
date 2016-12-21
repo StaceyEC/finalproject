@@ -1,3 +1,10 @@
+body {
+  background: #fafafa;
+}
+
+.emphasizer {
+  color: orange;
+}
 .g-maps {
     height: auto;
     width: 100%;
@@ -15,6 +22,11 @@
 
 .border-col {
     border: 1px solid;
+}
+
+.btn, 
+.btn-large {
+  background: #15323a;
 }
 
 .form-center {
@@ -66,16 +78,16 @@ label {
 
 
 h1 {
- font-size: 3.5rem;
+ font-size: 3.1rem;
  text-align: center;
- text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+ text-shadow: 0 3px 0 rgba(255, 255, 255, 0.4);
  font-weight: bold;
 }
 
 .h2-about {
  font-size: 2.5rem;
  text-align: center;
- text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+ text-shadow: 0 2px 0 rgba(255, 255, 255, 0.4);
  font-weight: bold;
 }
 
@@ -84,14 +96,16 @@ h1 {
 }
 
 .nav-items {
-  font-size: 2.1rem;
+  font-size: 1.4rem;
   color: black;
-  letter-spacing: 0px;
+  letter-spacing: 0;
+  font-weight: bold;
+
 }
 
 .footer-copyright {
   background: #bdb32f;
-  min-height: 50px;
+  min-height: 30px;
   text-decoration: none;
   padding: 20px;
   text-align: right;
@@ -104,15 +118,50 @@ h1 {
 }
 
 .keep-in-div {
-  width: 80%;
-  padding: 50px;
+  max-width: 80%;
+  padding: 25px;
   font-size: 22px;
   font-weight: bold;
-  font-style: italic;
+  text-align: center;
+  height: 180px;
+  box-sizing: border-box;
+}
+
+.keep-in-div img {
+  width: 100%;
+}
+
+.a:hover,  { 
+  color: #4db6ac;
+}
+
+.a-inline {
+color: #15323a;
+font-weight: bold;
 }
 
 .col-text {
   text-align: center;
   max-height: 400px;
+}
+
+.btn-center {
+  text-align: center;
+}
+
+.contact-padd {
+  padding-top: 3rem;
+}
+
+@media (max-width: 600px) {
+
+  .map {
+    height: 200px;
+  }
+
+  #resultsTitle {
+    font-size: 1.5rem;
+  }
+
 }
 

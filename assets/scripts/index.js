@@ -18,6 +18,9 @@ $(document).ready(function () {
 
   // Initialize the image slider
   $('.slider').slider({ full_width: true });
+  console.log('here')
+  $(".button-collapse").sideNav();
+
 
 
   // Attach a jQuery event listener to the "keypress" event
