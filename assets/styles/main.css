@@ -2,6 +2,9 @@ body {
   background: #fafafa;
 }
 
+.icon-black {
+  color:black;
+}
 .emphasizer {
   color: orange;
 }
@@ -123,16 +126,12 @@ h1 {
   font-size: 22px;
   font-weight: bold;
   text-align: center;
-  height: 180px;
+  height: auto;
   box-sizing: border-box;
 }
 
 .keep-in-div img {
   width: 100%;
-}
-
-.a:hover,  { 
-  color: #4db6ac;
 }
 
 .a-inline {
@@ -163,5 +162,9 @@ font-weight: bold;
     font-size: 1.5rem;
   }
 
+}
+
+a#link:hover {
+  color: #4db6ac;
 }
 
