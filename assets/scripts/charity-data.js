@@ -317,7 +317,7 @@ var volunteerDatabase = {
                "Women"
             ],
             "skills":[
-               ""
+               "N/A"
             ],
             "matchFor":[
                "Teens People 55+ Group"
@@ -484,7 +484,7 @@ var volunteerDatabase = {
                ""
             ],
             "skills":[
-               ""
+               "N/A"
             ],
             "matchFor":[
                "Kids Teens People 55+ Group"

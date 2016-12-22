@@ -168,3 +168,13 @@ a#link:hover {
   color: #4db6ac;
 }
 
+/*
+#override .cssselector {
+Good for overriding other styles. 
+There's a specificity for tags = 100,
+class = 10
+id = 1
+
+
+}
+*/

@@ -6,7 +6,7 @@ var map;
 window.initMap = function () {
   map = new google.maps.Map($('#map')[0], {
     center: { lat: 40.7127837, lng: -74.00594130000002 },
-    zoom: 14
+    zoom: 20
   });
 }
 
@@ -54,7 +54,7 @@ $(document).ready(function () {
       // Move/Zoom the map so that the search area
       // fits inside of visible portion of the map
       // and a little extra padding
-      map.fitBounds(searchGeocodeResult.geometry.bounds);
+      // map.fitBounds(searchGeocodeResult.geometry.bounds);
 
 
       // Set all map points and render all cards
@@ -77,6 +77,8 @@ $(document).ready(function () {
     // target area.
     let inBoundsCount = 0;
 
+    let allMarkerBounds = new google.maps.LatLngBounds();
+
     window.volunteerDatabase.events.forEach(function(volunteerEvent, index) {
       
       const address = volunteerEvent.company.address;
@@ -91,7 +93,10 @@ $(document).ready(function () {
           inBoundsCount++;
 
           // Create the marker for the event
-          createMarker(results[0], volunteerEvent);
+          let marker = createMarker(results[0], volunteerEvent);
+
+          allMarkerBounds.extend(marker.getPosition());
+          map.fitBounds(allMarkerBounds);
 
           // Would be weird to not have a single card rendered
           // So render the first card automatically, but no more.
@@ -123,6 +128,8 @@ $(document).ready(function () {
 
       console.log(volunteerEvent);
     });
+
+    return marker;
   }
 
 
